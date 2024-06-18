@@ -9,28 +9,41 @@
 
         </style>
 
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
         <script src="command.js"></script>
+        
+        <script src="query.js"></script>
 
         <link rel="stylesheet" href="style.css">
 
     </head>
 
     <body>
-        <h1>A command runner</h1>
+        <div class="root" align="center">
+            <h1>A command runner</h1>
 
-        <div class="output">
-            <p>Command runner, where your command will run here.</p>
-            <p>-------------------------------------------------</p>
-        </div>
+            <div class="resizable">
+                <div class="output" align="left">
+                    <p>Command runner, where your command will run here.</p>
+                    <p>-------------------------------------------------</p>
+                    <p id="out">[out] : </p>
+                </div>
+                <input class="blackEdit" id="black-edit" onkeydown="keydown()" align="left">
+            </div>
         
-        <div class="code">
-            <input class="blackEdit" onkeydown="keydown()">
-        </div>
-        
-        <div class="reference">
-            <p>
-                <li><b class="syntax">open {image file}</b><br>Open a image</li>
-            </p>
+            <div class="reference" align="left">
+                <h2>Syntax</h2>
+                <p>
+                    <li><b class="syntax">open {image file}</b><br>Open a image</li> 
+                    <button class="run-button">Run this</button>
+                    <br>
+                    <br>
+                    <li><b class="syntax">log {message}</b><br>Log message to the console</li>
+                    <button class="run-button">Run this</button>
+                    <br>
+                </p>
+            </div>
         </div>
 
     </body>
