@@ -1,0 +1,25 @@
+
+.code {
+    background-color:#000000;
+    color:rgb(250, 245, 236);
+    width: 512px;
+}
+
+.blackEdit {
+    background-color:#00063b;
+    color:rgb(250, 245, 236);
+    width: 505px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.output {
+    background-color: rgb(86, 118, 119);
+    min-height: 64px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(250, 245, 236);
+    width: 512px;
+}
+
+.syntax {
+    font-size: 16px;
+}
